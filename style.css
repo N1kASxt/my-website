@@ -1,0 +1,71 @@
+/* Стилізація body */
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin-left: 20px;
+}
+
+/* Стилізація заголовка (по центру) */
+h2 {
+    text-align: center;
+}
+
+/* Ширина форми */
+form {
+    width: 500px;
+}
+
+/* Відступи для label */
+label {
+    display: block; /* Щоб label займав свій рядок */
+    margin-bottom: 5px;
+    margin-top: 10px; /* Додатковий відступ зверху для краси */
+    font-weight: bold;
+}
+
+/* Стилізація полів вводу та випадаючого списку */
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+input[type="number"], 
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Щоб padding не збільшував ширину */
+}
+
+/* Стилізація кнопки */
+button {
+    padding: 10px;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Кнопка на всю ширину форми */
+    margin-top: 10px;
+}
+
+/* Ефект при наведенні на кнопку */
+button:hover {
+    background: #0056b3;
+}
+
+/* Окреме вирівнювання для чекбоксу, щоб він був на одному рядку з текстом */
+.checkbox-label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto; /* Скасовуємо ширину 100% для чекбоксу */
+    margin-bottom: 0;
+}
