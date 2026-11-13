@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Практична робота №13</title>
+    <!-- Підключення CSS-файлу -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Форма реєстрації</h2>
+
+    <form>
+        <!-- Поля для імені та прізвища -->
+        <label for="firstName">Ім'я:</label>
+        <input type="text" id="firstName" name="firstName">
+
+        <label for="lastName">Прізвище:</label>
+        <input type="text" id="lastName" name="lastName">
+
+        <!-- Поля для пошти та паролів -->
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password">
+
+        <label for="confirmPassword">Підтвердження пароля:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword">
+
+        <!-- Числове поле для віку -->
+        <label for="age">Вік:</label>
+        <input type="number" id="age" name="age" min="1" max="100">
+
+        <!-- Вибір статі (у завданні вказано тег select, хоча написано "радіокнопки") -->
+        <label for="gender">Стать:</label>
+        <select id="gender" name="gender">
+            <option value="male">Чоловіча</option>
+            <option value="female">Жіноча</option>
+            <option value="other">Інша</option>
+        </select>
+
+        <!-- Прапорець підтвердження -->
+        <label for="terms" class="checkbox-label">
+            <input type="checkbox" id="terms" name="terms">
+            Я погоджуюсь з умовами використання
+        </label>
+
+        <!-- Кнопка -->
+        <button type="submit">Зареєструватися</button>
+    </form>
+
+</body>
+</html>
